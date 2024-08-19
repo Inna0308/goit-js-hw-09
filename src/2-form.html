@@ -4,12 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page 3</title>
+    <title>Form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/2-form.css" />
   </head>
   <body>
     <section>
       <a href="./index.html">Go to home</a>
-      <h1>Welcome to page 3</h1>
+
+      <form class="feedback-form js-feedback-form" autocomplete="off">
+        <label>
+          Email
+          <input
+            type="email"
+            class="feedback-form-input js-feedback-email"
+            name="email"
+            autofocus
+          />
+        </label>
+        <label>
+          Message
+          <textarea
+            name="message"
+            class="feedback-form-message js-feedback-form-message"
+            rows="8"
+          ></textarea>
+        </label>
+        <button class="feedback-form-submit" type="submit">Submit</button>
+      </form>
     </section>
 
     <script type="module" src="./js/2-form.js"></script>
